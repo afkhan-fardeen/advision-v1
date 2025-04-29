@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react"; // Added useEffect import
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image"; // Added Image import
 import { useAuth } from "../../context/AuthContext";
 import { supabase } from "../../lib/supabase";
 import toast from "react-hot-toast";
-
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-  const [isRedirecting, setIsRedirecting] = useState(false); // Added state to manage redirect
+  const [isRedirecting, setIsRedirecting] = useState(false);
   const router = useRouter();
   const { user } = useAuth();
 
@@ -64,18 +64,21 @@ export default function Login() {
       {/* Top Bar */}
       <header className="bg-[#123458] text-[#F1EFEC] py-3 px-4 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto">
-          <Link
-            href="/"
-            className="text-xl font-medium text-[#F1EFEC] hover:text-[#FDFAF6] relative group"
-          >
-            AdVision
-            <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#FDFAF6] transition-all duration-300 group-hover:w-full"></span>
+          <Link href="/">
+            <Image
+              src="/images/logoAV.png"
+              alt="AdVision Logo"
+              width={120}
+              height={40}
+              className="hover:opacity-80 transition-opacity duration-300"
+              priority
+            />
           </Link>
         </div>
       </header>
 
       {/* Main Content - Split Layout */}
-      <main className="flex-grow flex flex-col lg:flex-row pt-4">
+      <main className="flex-grow flex flex-col lg:flex-row">
         {/* Left Side - Text Branding */}
         <div className="lg:w-1/2 flex items-center justify-center bg-[#123458] py-12 lg:py-0">
           <div className="text-center px-4 sm:px-6 lg:px-8 max-w-md">
@@ -158,7 +161,7 @@ export default function Login() {
               </button>
             </form>
             <p className="text-sm font-extralight text-[#030303] mt-4 text-center">
-              Don&apos;t have an account?{" "}
+              Don't have an account?{" "}
               <Link
                 href="/signup"
                 className="text-[#123458] hover:underline transition-colors duration-300 relative group"

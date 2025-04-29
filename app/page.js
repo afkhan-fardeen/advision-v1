@@ -66,13 +66,13 @@ export default function HomePage() {
             </Link>
             {isSignedIn ? (
               <>
-                <a
+                <Link
                   href="/dashboard"
                   className="text-[#F1EFEC] hover:text-[#FDFAF6] font-extralight text-sm relative group"
                 >
                   Dashboard
                   <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#FDFAF6] transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
                 <button onClick={handleLogout} aria-label="Logout">
                   <ArrowLeftOnRectangleIcon className="h-5 w-5 text-[#F1EFEC] hover:text-[#FDFAF6] transition" />
                 </button>
@@ -109,7 +109,7 @@ export default function HomePage() {
           <div className="md:w-1/2 w-full">
             <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden">
               <Image
-                src="/images/marketing.png"
+                src="/images/hero.png"
                 alt="AdVision campaign creation interface"
                 fill
                 className="object-cover absolute"
@@ -129,13 +129,12 @@ export default function HomePage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             <div className="bg-[#FDFAF6] p-4 rounded-xl shadow-lg">
-              <div className="relative h-24 sm:h-32 w-full bg-[#F1EFEC] rounded-lg mb-3 flex items-center justify-center">
+              <div className="relative h-24 sm:h-32 w-full bg-[#F1EFEC] rounded-lg mb-3 overflow-hidden">
                 <Image
-                  src="/images/ad-copy.png"
+                  src="/images/adCopy.png"
                   alt="Ad Copy Icon"
-                  width={60}
-                  height={60}
-                  className="object-contain"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-base sm:text-lg font-medium text-[#030303] mb-1">Create Compelling Ad Copies</h3>
@@ -144,13 +143,12 @@ export default function HomePage() {
               </p>
             </div>
             <div className="bg-[#FDFAF6] p-4 rounded-xl shadow-lg">
-              <div className="relative h-24 sm:h-32 w-full bg-[#F1EFEC] rounded-lg mb-3 flex items-center justify-center">
+              <div className="relative h-24 sm:h-32 w-full bg-[#F1EFEC] rounded-lg mb-3 overflow-hidden">
                 <Image
-                  src="/images/audience.png"
+                  src="/images/insights.png"
                   alt="Audience Icon"
-                  width={60}
-                  height={60}
-                  className="object-contain"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-base sm:text-lg font-medium text-[#030303] mb-1">Target the Right Audience</h3>
@@ -159,13 +157,12 @@ export default function HomePage() {
               </p>
             </div>
             <div className="bg-[#FDFAF6] p-4 rounded-xl shadow-lg">
-              <div className="relative h-24 sm:h-32 w-full bg-[#F1EFEC] rounded-lg mb-3 flex items-center justify-center">
+              <div className="relative h-24 sm:h-32 w-full bg-[#F1EFEC] rounded-lg mb-3 overflow-hidden">
                 <Image
-                  src="/images/analytics.png"
+                  src="/images/targetAudience.png" // Corrected assumed typo
                   alt="Analytics Icon"
-                  width={60}
-                  height={60}
-                  className="object-contain"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-base sm:text-lg font-medium text-[#030303] mb-1">Optimize with Insights</h3>

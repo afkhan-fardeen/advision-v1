@@ -64,7 +64,7 @@ export default function AIDesignSuggestions() {
         startNewChat();
       }
     }
-  }, [user, isMounted, conversationId, fetchConversations, fetchProjects, startNewChat]);
+  }, [user, isMounted, conversationId]);
 
   useEffect(() => {
     if (chatEndRef.current) {

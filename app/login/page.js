@@ -158,7 +158,7 @@ export default function Login() {
               </button>
             </form>
             <p className="text-sm font-extralight text-[#030303] mt-4 text-center">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link
                 href="/signup"
                 className="text-[#123458] hover:underline transition-colors duration-300 relative group"

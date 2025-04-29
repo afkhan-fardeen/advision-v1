@@ -50,20 +50,20 @@ export default function HomePage() {
             />
           </Link>
           <nav className="flex items-center space-x-4">
-            <a
+            <Link
               href="/"
               className="text-[#F1EFEC] hover:text-[#FDFAF6] font-extralight text-sm relative group"
             >
               Home
               <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#FDFAF6] transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#features"
               className="text-[#F1EFEC] hover:text-[#FDFAF6] font-extralight text-sm relative group"
             >
               Features
               <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#FDFAF6] transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </Link>
             {isSignedIn ? (
               <>
                 <a

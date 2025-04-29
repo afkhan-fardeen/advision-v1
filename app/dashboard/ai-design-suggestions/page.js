@@ -64,7 +64,7 @@ export default function AIDesignSuggestions() {
         startNewChat();
       }
     }
-  }, [user, isMounted, conversationId]);
+  }, [user, isMounted, conversationId, fetchConversations, fetchProjects, startNewChat]);
 
   useEffect(() => {
     if (chatEndRef.current) {
@@ -202,7 +202,7 @@ export default function AIDesignSuggestions() {
       console.error("Error deleting chat:", error.message);
       toast.error("Failed to delete chat.");
     }
-  }, [user, conversationId, startNewChat]);
+  }, [user, startNewChat]);
 
   const saveChat = useCallback(async () => {
     if (!conversationId || messages.length === 0) {

@@ -1420,7 +1420,7 @@ export default function ProjectWorkspace() {
                         {activeFeature === "Ad Copy Generator" && (
                           <div className="space-y-4">
                             <p className="text-sm text-[#030303] font-extralight">
-                              Choose a tone and click "Generate" to create ad texts for your project. You’ll get ready-to-use ads for your campaigns!
+                              Choose a tone and click "Generate" to create ad texts for your project. You&quot;ll get ready-to-use ads for your campaigns!
                             </p>
                             <div>
                               <label
@@ -1645,7 +1645,7 @@ export default function ProjectWorkspace() {
                         {activeFeature === "Keyword Research" && (
                           <div className="space-y-4">
                             <p className="text-sm text-[#030303] font-extralight">
-                              Click "Generate Keywords" to find popular search terms for your ads. These keywords can help more people find your ads online.
+                              Click &quot;Generate Keywords&quot; to find popular search terms for your ads. These keywords can help more people find your ads online.
                             </p>
                             <button
                               onClick={handleGenerateKeywords}
@@ -1702,7 +1702,7 @@ export default function ProjectWorkspace() {
                         {activeFeature === "Audience Insights" && (
                           <div className="space-y-4">
                             <p className="text-sm text-[#030303] font-extralight">
-                              Click "Generate Audiences" to learn about the people who might buy your product. You’ll get details like their age and interests.
+                              Click &quot;Generate Audiences&quot; to learn about the people who might buy your product. You’ll get details like their age and interests.
                             </p>
                             <button
                               onClick={handleGenerateAudienceSuggestions}
@@ -1865,7 +1865,7 @@ export default function ProjectWorkspace() {
                         {activeFeature === "Campaign Report" && (
                           <div className="space-y-4">
                             <p className="text-sm text-[#030303] font-extralight">
-                              Click "Generate Report" to create a summary of your project, including all your ads, keywords, and audiences. You can download it as a PDF to share with your team.
+                              Click &quot;Generate Report&quot; to create a summary of your project, including all your ads, keywords, and audiences. You can download it as a PDF to share with your team.
                             </p>
                             <button
                               onClick={() => setIsReportModalOpen(true)}
@@ -2496,7 +2496,7 @@ export default function ProjectWorkspace() {
               </button>
             </div>
             <p className="text-sm text-[#030303] font-extralight mb-4">
-              Click "Generate Report" to create a PDF summary of your project, including all your ads, keywords, and audiences. You can download it to share or save.
+              Click &quot;Generate Report&quot; to create a PDF summary of your project, including all your ads, keywords, and audiences. You can download it to share or save.
             </p>
             <button
               onClick={handleGenerateReport}

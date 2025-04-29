@@ -1,0 +1,279 @@
+.report-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1C2526; /* apple-black */
+    line-height: 1.6;
+    padding: 24px;
+    background: #F5F5F7; /* apple-white */
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .report-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .report-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1C2526;
+    margin-bottom: 8px;
+  }
+  
+  .report-date {
+    font-size: 14px;
+    color: #6E6E73; /* apple-gray */
+    font-weight: 500;
+  }
+  
+  .report-section {
+    margin-bottom: 48px;
+  }
+  
+  .section-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1C2526;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #34C759; /* apple-green */
+  }
+  
+  .report-card {
+    background: #FFFFFF;
+    border: 1px solid #D2D2D7; /* apple-input-border */
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .report-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content {
+    padding: 24px;
+  }
+  
+  .card-field {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  
+  .field-label {
+    font-weight: 600;
+    color: #1C2526;
+    width: 150px;
+    flex-shrink: 0;
+    font-size: 15px;
+  }
+  
+  .field-value {
+    color: #1C2526;
+    font-size: 15px;
+    flex: 1;
+  }
+  
+  .field-value p {
+    margin: 0;
+  }
+  
+  .field-list {
+    list-style-type: disc;
+    margin: 0 0 0 20px;
+    font-size: 14px;
+    color: #1C2526;
+  }
+  
+  .field-list li {
+    margin-bottom: 8px;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 16px;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D7;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .data-table th {
+    background: #F5F5F7;
+    color: #1C2526;
+    font-weight: 600;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .data-table td {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #1C2526;
+    border-top: 1px solid #E5E5EA;
+  }
+  
+  .data-table tr:nth-child(even) {
+    background: #FAFAFC;
+  }
+  
+  .data-table tr:hover {
+    background: #F0F0F5;
+  }
+  
+  .readability-table th:nth-child(1),
+  .readability-table td:nth-child(1) {
+    width: 40%;
+  }
+  
+  .readability-table th:nth-child(2),
+  .readability-table td:nth-child(2) {
+    width: 20%;
+  }
+  
+  .readability-table th:nth-child(3),
+  .readability-table td:nth-child(3) {
+    width: 40%;
+  }
+  
+  .keyword-table th:nth-child(1),
+  .keyword-table td:nth-child(1) {
+    width: 25%;
+  }
+  
+  .keyword-table th:nth-child(2),
+  .keyword-table td:nth-child(2) {
+    width: 15%;
+  }
+  
+  .keyword-table th:nth-child(3),
+  .keyword-table td:nth-child(3) {
+    width: 15%;
+  }
+  
+  .keyword-table th:nth-child(4),
+  .keyword-table td:nth-child(4) {
+    width: 15%;
+  }
+  
+  .keyword-table th:nth-child(5),
+  .keyword-table td:nth-child(5) {
+    width: 20%;
+  }
+  
+  .keyword-table th:nth-child(6),
+  .keyword-table td:nth-child(6) {
+    width: 10%;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 60px;
+  }
+  
+  .color-swatches {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  
+  .color-swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #D2D2D7;
+    display: inline-block;
+  }
+  
+  @media print {
+    .report-container {
+      background: #FFFFFF;
+      padding: 0;
+      max-width: 100%;
+    }
+  
+    .report-card {
+      box-shadow: none;
+      border: 1px solid #D2D2D7;
+      transform: none;
+    }
+  
+    .report-card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  
+    .data-table {
+      border: 1px solid #D2D2D7;
+    }
+  
+    .data-table tr:hover {
+      background: #FFFFFF;
+    }
+  
+    .section-title {
+      break-after: avoid;
+    }
+  
+    .report-card,
+    .data-table {
+      page-break-inside: avoid;
+    }
+  
+    .data-table tr {
+      page-break-inside: avoid;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .report-container {
+      padding: 16px;
+    }
+  
+    .report-title {
+      font-size: 28px;
+    }
+  
+    .section-title {
+      font-size: 22px;
+    }
+  
+    .card-content {
+      padding: 16px;
+    }
+  
+    .card-field {
+      flex-direction: column;
+    }
+  
+    .field-label {
+      width: auto;
+      margin-bottom: 4px;
+    }
+  
+    .data-table {
+      font-size: 12px;
+    }
+  
+    .data-table th,
+    .data-table td {
+      padding: 8px;
+    }
+  
+    .badge {
+      font-size: 11px;
+      padding: 3px 8px;
+    }
+  }

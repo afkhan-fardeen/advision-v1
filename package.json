@@ -9,13 +9,41 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@pqina/pintura": "^8.92.12",
+    "@pqina/react-pintura": "^9.0.4",
+    "@supabase/supabase-js": "^2.45.4",
+    "axios": "^1.7.2",
+    "dompurify": "^3.0.6",
+    "fabric": "^6.6.4",
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.10.3",
+    "jsonrepair": "^3.12.0",
+    "jspdf": "^2.5.1",
+    "konva": "^9.3.20",
+    "next": "15.3.1",
+    "node-vibrant": "^4.0.3",
     "react": "^19.0.0",
+    "react-color": "^2.19.3",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "react-draggable": "^4.4.5",
+    "react-hot-toast": "^2.4.1",
+    "react-konva": "^18.2.10",
+    "react-markdown": "^10.1.0",
+    "use-image": "^1.1.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9",
-    "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-next": "^15.3.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   }
 }

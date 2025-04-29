@@ -1420,7 +1420,7 @@ export default function ProjectWorkspace() {
                         {activeFeature === "Ad Copy Generator" && (
                           <div className="space-y-4">
                             <p className="text-sm text-[#030303] font-extralight">
-                              Choose a tone and click "Generate" to create ad texts for your project. You&quot;ll get ready-to-use ads for your campaigns!
+                              Choose a tone and click &quot;Generate&quot; to create ad texts for your project. You&quot;ll get ready-to-use ads for your campaigns!
                             </p>
                             <div>
                               <label
